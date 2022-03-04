@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+
+import {
+  Routes,
+  Route,
+} from "react-router-dom";
 import './App.css';
+import Join from './Component/Join/Join';
+import Chat from './Component/Chat/Chat';
+import Wallet from './Component/Wallet/Wallet';
+import CreateWallet from './Component/Wallet/CreateWallet/CreateWallet';
+import PrivateRoute from './Component/Wallet/PrivateRoute';
 
 function App() {
+ 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/" element={<Join />} />
+        <Route path="chat" element={<Chat />} />
+        <Route path="wallet" element={<Wallet />} />
+        {/* <Route path="wallet" element={<PrivateRoute><Wallet /></PrivateRoute>} /> */}
+        <Route path="createWallet" element={<CreateWallet />} />
+    </Routes>
     </div>
   );
 }

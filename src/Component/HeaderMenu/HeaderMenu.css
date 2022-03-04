@@ -1,0 +1,14 @@
+.menuBtn{
+  float: right;
+  background-color: transparent;
+  border: none;
+}
+.menuBtn img{
+  width: 60px;
+}
+
+@media (max-width: 770px) {
+  .menuBtn img{
+    width: 50px;
+  }
+}

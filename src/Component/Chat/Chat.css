@@ -1,0 +1,119 @@
+.chatPage{
+  background-color: #050c2c;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Rajdhani", sans-serif;
+}
+.chatContainer{
+  background-color: #ffffff;
+  width: 50%;
+  height: 60%;
+  color: #777777;
+  font-family: "Rajdhani", sans-serif;
+}
+.header{
+  background: linear-gradient(75deg, #6ab2e4, #007fbd);
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header h3{
+  margin-top: 12px;
+  margin-left: 7px;
+  font-size: 30px;
+  color: rgb(233, 233, 233);
+}
+.logoDiv{
+  display: flex;
+  margin: 20px;
+}
+.logoDiv img{
+  width: 60px;
+}
+.closeIcon{
+  width: 25px;
+  margin-left: auto;
+  margin-right: 20px;
+  filter: brightness(50) invert();
+  cursor: pointer;
+  transition: all .3s;
+}
+.closeIcon:hover{
+  transform: scale(1.4);
+}
+.chatBox{
+  height: 70%;
+}
+.chatInput-box{
+  height: 15%;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+#chatInput{
+  border: none;
+  outline: none;
+  width: 80%;
+  padding: 0px 20px;
+  box-sizing: border-box;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 17px;
+  color: rgb(100, 100, 100);
+}
+.chatInput-box button{
+  border: none;
+  background: linear-gradient(75deg,#007fbd, #6ab2e4);
+  width: 20%;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "Rajdhani", sans-serif;
+  cursor: pointer;
+  box-sizing: border-box;
+} 
+.chatInput-box button img{
+  width: 40px;
+  filter: brightness(100) invert();
+  transition: all .5s;
+} 
+.chatInput-box button:hover{
+  background: linear-gradient(75deg,#6ab2e4, #007fbd );
+}
+.chatInput-box button:hover img{
+  transform: translateX(10px);
+}
+
+
+@media (max-width: 770px) {
+  .chatContainer{
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .header{
+    height: 10%;
+    margin-bottom: 20px;
+  }
+  .chatBox{
+    height: 80%;
+  }
+  .chatInput-box{
+    height: 10%;
+  }
+  #chatInput{
+    width: 70%;
+    
+  }
+  .chatInput-box button{
+    padding: 20px;
+    width: 30%;
+  } 
+  .chatInput-box button img{
+    width: 30px;
+    margin-top: -5px;
+  } 
+  .closeIcon{
+    margin-right: 30px;
+  }
+}

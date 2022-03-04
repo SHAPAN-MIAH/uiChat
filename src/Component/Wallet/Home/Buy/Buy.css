@@ -1,0 +1,89 @@
+.buy-modal-header {
+  border-bottom: 2px solid gainsboro;
+  font-family: "Rajdhani", sans-serif;
+  color: rgb(100, 100, 100);
+  margin-bottom: 20px;
+}
+.buy-modal-header h4 {
+  font-weight: 600;
+}
+.buy-modal-header p {
+  font-weight: 300;
+  font-size: 12px;
+}
+.buy-modal-times-Icon {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.buy-modal-text {
+  font-family: "Rajdhani", sans-serif;
+  color: rgb(100, 100, 100);
+}
+.buy-modal-text h6 {
+  color: #6ab2e4;
+  font-weight: 600;
+}
+.buy-modal-text p {
+  font-size: 13px;
+}
+
+.eth-img {
+  margin-bottom: 20px;
+}
+
+.eth-img img {
+  border: 2px solid rgb(124, 124, 124);
+  border-radius: 50px;
+  padding: 5px 10px;
+  position: relative;
+  margin: auto;
+}
+.eth-plus-icon {
+  position: absolute;
+  border: 2px solid rgb(124, 124, 124);
+  border-radius: 50px;
+  padding: 2px 7px;
+  margin-top: 32px;
+  margin-left: 310px;
+  font-size: 15px;
+  background-color: #ffff;
+  color: rgb(100, 100, 100);
+}
+
+.eth-text {
+  font-family: "Rajdhani", sans-serif;
+  color: rgb(100, 100, 100);
+}
+.eth-text h6 {
+  font-size: 18px;
+}
+
+
+#ethBtn {
+  width: 300px;
+  font-size: 15px;
+  border: 0.2px solid #037dd6;
+  /* border-radius: 5px; */
+  padding: 10px 0px;
+  background-color: #ffff;
+  color: #037dd6;
+  margin: 10px 0px;
+}
+
+.deposit-container{
+  font-family: 'Rajdhani', sans-serif;
+  color: rgb(124, 124, 124);
+}
+.deposit-container h6{
+  text-align: left;
+  margin-left: 150px;
+}
+
+#depositInput{
+  border: 1px solid gainsboro;
+  outline: none;
+  padding: 7px;
+  width: 300px;
+  margin: 10px 0px;
+}

@@ -1,0 +1,27 @@
+.messageContainer{
+  width: 47%;
+  padding: 15px 20px;
+  margin: 1vmax;
+  border-radius: 30px;
+  clear: both;
+  overflow-y: auto;
+}
+.left{
+  background: linear-gradient(75deg,#007fbd, #6ab2e4);
+  color: #ffffff;
+}
+.right{
+  background-color: aliceblue;
+  float: right;
+}
+
+
+@media (max-width: 770px) {
+  .messageContainer{
+    width: 60%;
+    padding: 20px 30px;
+    margin-left: 20px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+  }
+}

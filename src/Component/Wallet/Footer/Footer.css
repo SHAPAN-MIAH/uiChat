@@ -1,0 +1,11 @@
+.footer-content {
+  background-color: #050c2c;
+  text-align: center;
+  font-family: "Rajdhani", sans-serif;
+  color: rgb(255, 255, 255);
+  padding: 20px 0px;
+}
+.footer-content span {
+  color: #6ab2e4;
+  cursor: pointer;
+}
