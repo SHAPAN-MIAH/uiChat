@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEllipsisV, faPen, faPodcast, faShareSquare, faThLarge, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faEllipsisV, faPen, faPodcast, faShareSquare, faThLarge, faTimes, faUsd, faUser, faUserAlt, faUserCircle } from '@fortawesome/free-solid-svg-icons';
 import "./Account1.css";
 import Overlay from "react-overlay-component";
 import qrCodeImg from "../../../../assets/images/qr_code_PNG25.png";
@@ -10,7 +10,7 @@ import ReactDOM from 'react-dom';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 import { usePopperTooltip } from 'react-popper-tooltip';
 import 'react-popper-tooltip/dist/styles.css';
-
+import logo from '../../../../images/4621583.png'
 
 const Account1 = () => {
 
@@ -98,6 +98,19 @@ const Account1 = () => {
   return (
     <>
       <div className="Account1">
+      <div className="home-logo">
+          <img src={logo} alt=""/> 
+      </div> 
+      <div className="NetworksForm-container">
+                <div id="Networks">
+                  <h6>
+                    <FontAwesomeIcon  icon={faUsd} />
+                    <span className='usdBalance1'> 100 </span> USD
+                    {/* <span className='ethBalance1'> {balances.map(balance => <span>{balance.newBalance}</span>)}</span> USD */}
+                  </h6>
+                  
+                </div>
+              </div>
         {/* Account info clipboard */}
         <CopyToClipboard text={"0xD58a109736D6b5436bc61321c93a43C0A21F9a6e"}
         onCopy={() => this.setState({copied: true})}>
@@ -121,10 +134,10 @@ const Account1 = () => {
             )}
           </div>
         </CopyToClipboard>
-
         {/* Account menu content */}
         <div className="accountMenu">
-            <label onClick={accountMenuToggle} className="menuBarClick"><FontAwesomeIcon className="menuIcon" icon={faEllipsisV} /></label>
+            {/* <label onClick={accountMenuToggle} className="menuBarClick"><FontAwesomeIcon className="menuIcon" icon={faEllipsisV} /></label> */}
+            <label onClick={accountMenuToggle} className="menuBarClick"><FontAwesomeIcon className="menuIcon" icon={faUserCircle} /></label>
             <div className="mt-4">
               <div className="list">
                   <button onClick={() => {setOverlay(true)}} className="links"><span className="listMenuIcon"><FontAwesomeIcon  icon={faThLarge} /></span> Account Details</button>
@@ -156,7 +169,7 @@ const Account1 = () => {
           <div class="row">
             <div className="col-md-6">
                 <div className="insideModal-content-container">
-                  <div>
+                  <div className="mt-3">
                     <div className="d-flex justify-content-center">
                       <img width="60px" src={userIcon} alt=""/>
                     </div>

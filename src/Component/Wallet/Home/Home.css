@@ -1,5 +1,5 @@
 .home-header {
-  background: #6ab2e4;
+  /* background: #6ab2e4; */
   display: flex;
   position: relative;
   /* border-bottom: 1px solid white; */
@@ -9,24 +9,27 @@
   color: rgb(255, 255, 255);
   font-weight: 700;
   display: flex;
-  padding-top: 20px;
-  padding-bottom: 60px;
+  margin-left: 20px;
+  /* padding-top: 20px; */
+  /* padding-bottom: 60px; */
 }
-.home-logo h3 {
+/* .home-logo h3 {
   font-size: 30px;
   margin-top: 18px;
   margin-left: 10px;
-}
+} */
 .home-logo img {
-  width: 60px;
-  height: 100%;
+  width: 70px;
+  margin-top: -11px;
+  margin-right: 7px;
+  filter: brightness(3) ;
 }
 
 .home-container {
   width: 1000px;
   /* background-color: rgb(20, 4, 37); */
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  margin-top: -40px;
+  /* margin-top: -40px; */
   position: absolute;
   font-family: "Rajdhani", sans-serif;
   /* color: rgb(255, 255, 255); */
@@ -34,19 +37,18 @@
 
 .Account1 {
   background-color: #050c2c; 
-  padding: 15px 0px;
-  border-bottom: 0.5px solid gainsboro;
+  padding: 20px 0px;
   display: flex;
 }
 .account-name-id {
   /* margin-left: auto; */
-  margin-right: -220px;
+  /* margin-right: -220px; */
   text-align: center;
 }
 .accountMenu {
   margin-left: auto;
-  margin-right: 20px;
-  margin-top: 10px;
+  margin-right: 45px;
+  /* margin-top: 10px; */
   cursor: pointer;
 }
 .Account1 small {
@@ -58,9 +60,20 @@
 
 .balance-container{
   background-color: #ffffff;
+  padding-top: 40px;
   color: #7e7e7e;
 }
-
+.assetSendDepositSwap_container{
+  background-color: #6ab2e4;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  color: #ffffff;
+  padding: 20px 0px;
+  width: 50%;
+  margin: auto;
+  border-radius: 10px;
+  /* margin-top: 30px; */
+  margin-bottom: 20px;
+}
 .ethereum-icon {
   border: 0.5px solid gainsboro;
   border-radius: 50px;
@@ -84,7 +97,7 @@
 .send,
 .swap {
   margin: 10px 20px;
-  background-color: #6ab2e4;
+  background-color: #050c2c59;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -96,7 +109,7 @@
   margin-top: 10px;
 }
 .buy-send-swap p {
-  color: #6ab2e4;
+  color: #ffffff;
 }
 
 .activity-title {
@@ -104,6 +117,7 @@
   font-family: "Rajdhani", sans-serif;
   color: #7e7e7e;
   cursor: pointer;
+  margin-left: 20px;
 }
 .assets-title {
   border-bottom: 2px solid #6ab2e4;
@@ -141,18 +155,19 @@
 }
 
 .NetworksForm-container {
-  margin-left: auto;
+  /* margin-left: 25px; */
 }
 #Networks {
-  width: 200px;
-  border: 0.5px solid gainsboro;
+  width: 180px;
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 30px;
   padding: 10px;
-  margin-top: 35px;
+  margin-top: 2px;
   outline: none;
-  color: #ffffff;
+  /* color: #ffffff; */
   font-family: "Rajdhani", sans-serif;
   text-align: center;
+  color: #fff;
 }
 #Networks h6{
   margin-top: 6px;

@@ -1,23 +1,29 @@
 .clipboard-container {
-  margin-left: auto;
+  margin-left: 28vw;
   color: #ffffff;
+  
 }
 .accountMenu {
   position: relative;
   width: 200px;
   cursor: auto;
   color: #ffffff;
+  
 }
 .account-name-id {
   cursor: pointer;
   padding: 5px 0px;
+  border: .1px solid #ffffff;
+  border-radius: 30px;
+  position: relative;
+  margin-left: 10px;
+  margin-top: 2px;
+  width: 200px;
 }
 .account-name-id h5 {
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 .account-name-id:hover {
-  width: 250px;
-  border-radius: 5px;
   background-color: rgba(241, 241, 241, 0.144);
 }
 .copied-test {
@@ -25,31 +31,39 @@
 }
 .menuBarClick {
   float: right;
-  width: 20px;
+  width: 30px;
   padding: 5px;
   cursor: pointer;
   text-align: center;
+  /* margin-right: 20px; */
+}
+.menuIcon{
+  font-size: 50px;
 }
 .links {
-  padding: 10px 5px;
+  padding: 7px 5px;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
-  color: rgb(100, 100, 100);
+  color: #ffffff;
   border: none;
   outline: none;
   width: 200px;
-  background-color: #ffffff;
+  background-color: #6ab2e4;
   text-align: left;
   border-radius: 10px;
 }
 .list {
-  background-color: #ffffff;
+  width: 200px;
+  padding: 5px 0px;
+  background-color: #6ab2e4;
   position: absolute;
   transform-origin: top;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  margin-right: auto;
   display: none;
-  margin-top: 7px;
+  margin-top: 50px;
+  margin-left: -140px;
+  border-radius: 10px;
+  
 }
 
 .newlist {

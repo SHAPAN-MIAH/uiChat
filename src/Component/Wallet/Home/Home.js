@@ -41,7 +41,7 @@ const Home = () => {
   return (
     <>
      <div className='home-body'>
-       <div className='home-header'>
+       {/* <div className='home-header'>
           <div className="container" style={{width: "1000px", margin: "auto"}}>
             <div className="d-flex">
 
@@ -55,7 +55,7 @@ const Home = () => {
                   <h6>
                     <FontAwesomeIcon  icon={faUsd} />
                     <span className='usdBalance1'> 100 </span> USD
-                    {/* <span className='ethBalance1'> {balances.map(balance => <span>{balance.newBalance}</span>)}</span> USD */}
+                    <span className='ethBalance1'> {balances.map(balance => <span>{balance.newBalance}</span>)}</span> USD
                   </h6>
                   
                 </div>
@@ -68,7 +68,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-       </div>
+       </div> */}
 
        <div className="container-fluid" style={{width: "1000px", margin: "auto"}}>
           <div className="home-container">
@@ -76,8 +76,9 @@ const Home = () => {
               <Account1/>
             </div>
             <div className="balance-container m-auto">
+              <div className='assetSendDepositSwap_container'>
               <div className=" d-flex justify-content-center mt-3">
-                  <h4>Asset</h4>
+                  <h4>ASSETS</h4>
               </div>
               <div className="eth-balance text-center mb-3">
                 <h3>
@@ -100,13 +101,14 @@ const Home = () => {
                   <p>Swap</p>
                 </div>
               </div>
+              </div>
 
               <div className="assets-activity-container ">
               <div class="row">
                 <div className="col-md-12">
                   <div className="activity">
-                    <div className="activity-title text-center">
-                      <h4 className="act mb-2">Activity</h4>
+                    <div className="activity-title">
+                      <h4 className="act mb-2">History...</h4>
                     </div>
                   </div>
                 </div>
